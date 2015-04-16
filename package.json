@@ -1,0 +1,22 @@
+{
+  "name": "mean-stack-contatooh",
+  "version": "1.0.0",
+  "description": "Aplicação teste do livro MEAN Stack da Casa do Código.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hugodutra/mean-stack-contatooh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugodutra/mean-stack-contatooh/issues"
+  },
+  "homepage": "https://github.com/hugodutra/mean-stack-contatooh",
+  "dependencies": {
+    "express": "^4.8.8"
+  }
+}
