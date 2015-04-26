@@ -1,0 +1,19 @@
+{
+  "name": "mean-stack-contatooh",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hugodutra/mean-stack-contatooh",
+  "authors": [
+    "Hugo Dutra <hugow.dutra@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.3"
+  }
+}
