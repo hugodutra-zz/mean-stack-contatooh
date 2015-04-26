@@ -1,0 +1,183 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'body-parser@r@1.6',
+1 verbose cli   'method-override@2.1',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'body-parser@r@1.6', null ]
+6 verbose cache add name=undefined spec="body-parser@r@1.6" args=["body-parser@r@1.6",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'body-parser@r@1.6',
+7 verbose parsed url   path: 'body-parser@r@1.6',
+7 verbose parsed url   href: 'body-parser@r@1.6' }
+8 verbose cache add [ 'method-override@2.1', null ]
+9 verbose cache add name=undefined spec="method-override@2.1" args=["method-override@2.1",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'method-override@2.1',
+10 verbose parsed url   path: 'method-override@2.1',
+10 verbose parsed url   href: 'method-override@2.1' }
+11 verbose cache add name="body-parser" spec="r@1.6" args=["body-parser","r@1.6"]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'r@1.6',
+12 verbose parsed url   path: 'r@1.6',
+12 verbose parsed url   href: 'r@1.6' }
+13 verbose addNamed [ 'body-parser', 'r@1.6' ]
+14 verbose addNamed [ null, null ]
+15 verbose cache add name="method-override" spec="2.1" args=["method-override","2.1"]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: '2.1',
+16 verbose parsed url   path: '2.1',
+16 verbose parsed url   href: '2.1' }
+17 verbose addNamed [ 'method-override', '2.1' ]
+18 verbose addNamed [ null, '>=2.1.0-0 <2.2.0-0' ]
+19 silly lockFile dbd7779e-body-parser-r-1-6 body-parser@r@1.6
+20 verbose lock body-parser@r@1.6 /home/hugodutra/.npm/dbd7779e-body-parser-r-1-6.lock
+21 silly lockFile 8b36d161-method-override-2-1 method-override@2.1
+22 verbose lock method-override@2.1 /home/hugodutra/.npm/8b36d161-method-override-2-1.lock
+23 info addNameTag [ 'body-parser', 'r@1.6' ]
+24 silly addNameRange { name: 'method-override',
+24 silly addNameRange   range: '>=2.1.0-0 <2.2.0-0',
+24 silly addNameRange   hasData: false }
+25 verbose request where is /body-parser
+26 verbose request registry https://registry.npmjs.org/
+27 verbose request id 9967fa3c19a36757
+28 verbose url raw /body-parser
+29 verbose url resolving [ 'https://registry.npmjs.org/', './body-parser' ]
+30 verbose url resolved https://registry.npmjs.org/body-parser
+31 verbose request where is https://registry.npmjs.org/body-parser
+32 info trying registry request attempt 1 at 19:14:46
+33 verbose etag "F1XJQAAGBFIH6FZQ7GIF6IZ57"
+34 http GET https://registry.npmjs.org/body-parser
+35 verbose request where is /method-override
+36 verbose request registry https://registry.npmjs.org/
+37 verbose url raw /method-override
+38 verbose url resolving [ 'https://registry.npmjs.org/', './method-override' ]
+39 verbose url resolved https://registry.npmjs.org/method-override
+40 verbose request where is https://registry.npmjs.org/method-override
+41 info trying registry request attempt 1 at 19:14:46
+42 verbose etag "E337URHC8NT520YAK7UG2YGN"
+43 http GET https://registry.npmjs.org/method-override
+44 http 200 https://registry.npmjs.org/method-override
+45 silly registry.get cb [ 200,
+45 silly registry.get   { date: 'Sun, 26 Apr 2015 22:14:49 GMT',
+45 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+45 silly registry.get     etag: '"CQQ955UI2J5E0NNFSH8KYN5GZ"',
+45 silly registry.get     'content-type': 'application/json',
+45 silly registry.get     'cache-control': 'max-age=60',
+45 silly registry.get     'content-length': '30255',
+45 silly registry.get     'accept-ranges': 'bytes',
+45 silly registry.get     via: '1.1 varnish',
+45 silly registry.get     age: '18',
+45 silly registry.get     'x-served-by': 'cache-jfk1034-JFK',
+45 silly registry.get     'x-cache': 'HIT',
+45 silly registry.get     'x-cache-hits': '4',
+45 silly registry.get     'x-timer': 'S1430086489.052702,VS0,VE0',
+45 silly registry.get     vary: 'Accept',
+45 silly registry.get     'keep-alive': 'timeout=10, max=50',
+45 silly registry.get     connection: 'Keep-Alive' } ]
+46 silly addNameRange number 2 { name: 'method-override',
+46 silly addNameRange   range: '>=2.1.0-0 <2.2.0-0',
+46 silly addNameRange   hasData: true }
+47 silly addNameRange versions [ 'method-override',
+47 silly addNameRange   [ '1.0.0',
+47 silly addNameRange     '1.0.1',
+47 silly addNameRange     '1.0.2',
+47 silly addNameRange     '2.0.0',
+47 silly addNameRange     '2.0.1',
+47 silly addNameRange     '2.0.2',
+47 silly addNameRange     '2.1.0',
+47 silly addNameRange     '2.1.1',
+47 silly addNameRange     '2.1.2',
+47 silly addNameRange     '2.1.3',
+47 silly addNameRange     '2.2.0',
+47 silly addNameRange     '2.3.0',
+47 silly addNameRange     '2.3.1',
+47 silly addNameRange     '2.3.2' ] ]
+48 verbose addNamed [ 'method-override', '2.1.3' ]
+49 verbose addNamed [ '2.1.3', '2.1.3' ]
+50 silly lockFile b4e26855-method-override-2-1-3 method-override@2.1.3
+51 verbose lock method-override@2.1.3 /home/hugodutra/.npm/b4e26855-method-override-2-1-3.lock
+52 silly lockFile 80617f34-erride-method-override-2-1-3-tgz https://registry.npmjs.org/method-override/-/method-override-2.1.3.tgz
+53 verbose lock https://registry.npmjs.org/method-override/-/method-override-2.1.3.tgz /home/hugodutra/.npm/80617f34-erride-method-override-2-1-3-tgz.lock
+54 verbose addRemoteTarball [ 'https://registry.npmjs.org/method-override/-/method-override-2.1.3.tgz',
+54 verbose addRemoteTarball   '511f41c4fb1dccdb6ab1844da5dc6ea81b7c1135' ]
+55 info retry fetch attempt 1 at 19:14:52
+56 verbose fetch to= /tmp/npm-14814-490H6104/registry.npmjs.org/method-override/-/method-override-2.1.3.tgz
+57 http GET https://registry.npmjs.org/method-override/-/method-override-2.1.3.tgz
+58 http 200 https://registry.npmjs.org/body-parser
+59 silly registry.get cb [ 200,
+59 silly registry.get   { date: 'Sun, 26 Apr 2015 22:14:48 GMT',
+59 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+59 silly registry.get     etag: '"4G98EU7AUYVB9BCPCY2CI2RYD"',
+59 silly registry.get     'content-type': 'application/json',
+59 silly registry.get     'cache-control': 'max-age=60',
+59 silly registry.get     'content-length': '95465',
+59 silly registry.get     'accept-ranges': 'bytes',
+59 silly registry.get     via: '1.1 varnish',
+59 silly registry.get     age: '45',
+59 silly registry.get     'x-served-by': 'cache-iad2138-IAD',
+59 silly registry.get     'x-cache': 'HIT',
+59 silly registry.get     'x-cache-hits': '1',
+59 silly registry.get     'x-timer': 'S1430086488.593168,VS0,VE0',
+59 silly registry.get     vary: 'Accept',
+59 silly registry.get     'keep-alive': 'timeout=10, max=50',
+59 silly registry.get     connection: 'Keep-Alive' } ]
+60 silly lockFile dbd7779e-body-parser-r-1-6 body-parser@r@1.6
+61 silly lockFile dbd7779e-body-parser-r-1-6 body-parser@r@1.6
+62 http 200 https://registry.npmjs.org/method-override/-/method-override-2.1.3.tgz
+63 silly lockFile 80617f34-erride-method-override-2-1-3-tgz https://registry.npmjs.org/method-override/-/method-override-2.1.3.tgz
+64 silly lockFile 80617f34-erride-method-override-2-1-3-tgz https://registry.npmjs.org/method-override/-/method-override-2.1.3.tgz
+65 silly lockFile b4e26855-method-override-2-1-3 method-override@2.1.3
+66 silly lockFile b4e26855-method-override-2-1-3 method-override@2.1.3
+67 silly lockFile 8b36d161-method-override-2-1 method-override@2.1
+68 silly lockFile 8b36d161-method-override-2-1 method-override@2.1
+69 error notarget No compatible version found: body-parser@'r@1.6'
+69 error notarget Valid install targets:
+69 error notarget ["1.0.0","1.0.1","1.0.2","1.1.0","1.1.1","1.1.2","1.2.0","1.2.1","1.2.2","1.3.0","1.3.1","1.4.0","1.4.1","1.4.2","1.4.3","1.5.0","1.5.1","1.5.2","1.6.0","1.6.1","1.6.2","1.6.3","1.6.4","1.6.5","1.6.6","1.6.7","1.7.0","1.8.0","1.8.1","1.8.2","1.8.3","1.8.4","1.9.0","1.9.1","1.9.2","1.9.3","1.10.0","1.10.1","1.10.2","1.11.0","1.12.0","1.12.1","1.12.2","1.12.3"]
+69 error notarget
+69 error notarget This is most likely not a problem with npm itself.
+69 error notarget In most cases you or one of your dependencies are requesting
+69 error notarget a package version that doesn't exist.
+70 error System Linux 3.13.0-45-generic
+71 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "body-parser@r@1.6" "method-override@2.1" "--save"
+72 error cwd /home/hugodutra/dev/mean-stack-contatooh
+73 error node -v v0.10.36
+74 error npm -v 1.4.28
+75 error code ETARGET
+76 verbose exit [ 1, true ]
