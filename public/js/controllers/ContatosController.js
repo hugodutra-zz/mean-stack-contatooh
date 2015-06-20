@@ -21,5 +21,7 @@ angular.module('contatooh').controller('ContatosController', function($scope){
 			'nome': 'Contato Angular 3',
 			'email': 'cont3@empresa.com.br'
 		},
-	]
+	];
+
+	$scope.filtro = '';
 });
