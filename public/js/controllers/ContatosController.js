@@ -1,4 +1,4 @@
-angular.module('contatooh').controller('ContatosController', function($scope){
+angular.module('contatooh').controller('ContatosController', function($scope, $http){
 	$scope.total = 0;
 
 	$scope.incrementa = function(){
@@ -24,4 +24,30 @@ angular.module('contatooh').controller('ContatosController', function($scope){
 	];
 
 	$scope.filtro = '';
+
+	function exibeContatos(contatos, callback) {
+
+		callback(contatos);
+	}
+
+	function modificaContatos(contatos, callback) {
+
+		callback(contatos);
+	}
+
+	function atualizaContatos(contatos, callback) {
+
+		callback(contatos);
+	}
+
+	$http.get('/contatos', function(contatos) {
+		exibeContatos(contatos, function(contatosModificados) {
+			atualizaContatos(contatosModificados, function(contatos) {
+				$scope.mensagem = {
+					texto: 'Contatos atualizados com sucesso'
+				};
+			});
+		});
+	});
+	
 });
