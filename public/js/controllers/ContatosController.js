@@ -25,29 +25,10 @@ angular.module('contatooh').controller('ContatosController', function($scope, $h
 
 	$scope.filtro = '';
 
-	function exibeContatos(contatos, callback) {
-
-		callback(contatos);
-	}
-
-	function modificaContatos(contatos, callback) {
-
-		callback(contatos);
-	}
-
-	function atualizaContatos(contatos, callback) {
-
-		callback(contatos);
-	}
-
-	$http.get('/contatos', function(contatos) {
-		exibeContatos(contatos, function(contatosModificados) {
-			atualizaContatos(contatosModificados, function(contatos) {
-				$scope.mensagem = {
-					texto: 'Contatos atualizados com sucesso'
-				};
-			});
-		});
+	$http.get('/contatos').success(function(data){
+		$scope.contatos = data;
+	}).error(function(statusText) {
+		console.log(statusText);
 	});
-	
+
 });
